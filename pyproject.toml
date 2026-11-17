@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "unbiased-radar-mcp"
-version = "1.0.0"
-description = "Unfiltered developer sentiment, pricing cliffs & gripes from Reddit and Hacker News for Claude, Cursor, and Windsurf"
+version = "1.1.0"
+description = "Unfiltered developer sentiment, pricing cliffs & cloud TCO calculator from Reddit and Hacker News for Claude, Cursor, and Windsurf"
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
     {name = "StackVerdict Team", email = "support@pingguye.cn"}
 ]
-keywords = ["mcp", "model-context-protocol", "claude", "cursor", "sentiment-analysis", "stackverdict"]
+keywords = ["mcp", "model-context-protocol", "claude", "cursor", "cloud-cost", "tco", "sentiment-analysis", "stackverdict"]
 dependencies = []
 
 [project.urls]

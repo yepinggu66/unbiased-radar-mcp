@@ -1,22 +1,16 @@
-# 📡 Unbiased Dev Radar · MCP Server
+# 📡 Unbiased Dev Radar · MCP Server (v1.1.0)
 
-[![Smithery Badge](https://smithery.ai/badge/unbiased-radar-mcp)](https://smithery.ai/server/unbiased-radar-mcp)
+[![GitHub Release](https://img.shields.io/github/v/release/yepinggu66/unbiased-radar-mcp)](https://github.com/yepinggu66/unbiased-radar-mcp/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Powered by StackVerdict](https://img.shields.io/badge/Engine-StackVerdict-blue)](https://pingguye.cn/stackverdict/)
 
-**Penetrate vendor marketing fluff.** An official [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server providing real, unfiltered sentiment, developer gripes, and pricing cliff warnings straight into **Claude Desktop**, **Cursor**, and **Windsurf**.
+**Penetrate vendor marketing fluff & cloud billing traps.** An official [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server providing real, unfiltered developer sentiment, pricing cliff warnings, and true Total Cost of Ownership (TCO) calculations straight into **Claude Desktop**, **Cursor**, and **Windsurf**.
 
 ---
 
 ## ⚡ 1-Minute Quickstart
 
-### Option A: Install via Smithery (Recommended)
-To automatically install for Claude Desktop:
-```bash
-npx -y @smithery/cli install unbiased-radar-mcp --client claude
-```
-
-### Option B: Manual Setup for Claude Desktop
+### Claude Desktop Configuration
 Add the following to your `claude_desktop_config.json`:
 ```json
 {
@@ -29,7 +23,7 @@ Add the following to your `claude_desktop_config.json`:
 }
 ```
 
-### Option C: Manual Setup for Cursor / Windsurf
+### Cursor / Windsurf Configuration
 In **Cursor Settings -> Features -> MCP -> Add New MCP Server**:
 * **Name**: `unbiased-radar`
 * **Type**: `command`
@@ -39,7 +33,7 @@ In **Cursor Settings -> Features -> MCP -> Add New MCP Server**:
 
 ## 🛠️ Available MCP Tools
 
-### `get_unbiased_sentiment`
+### 1. `get_unbiased_sentiment`
 Fetch real developer discussions, pricing traps, and migration regrets from Reddit & Hacker News for any software, framework, or cloud vendor.
 
 * **Example Query**: `"Cursor"`, `"Vercel"`, `"Supabase"`, `"Cloudflare"`, `"Next.js"`
@@ -48,6 +42,23 @@ Fetch real developer discussions, pricing traps, and migration regrets from Redd
   * Top 3 candid gripes (pricing cliffs, memory leaks, latency, support lag)
   * Top community discussion threads with scores and links
   * Migration alternatives
+
+### 2. `calculate_cloud_tco` ⭐ NEW
+Calculate true monthly Total Cost of Ownership (TCO), billing cliffs, and egress fee penalties comparing cloud vendors (e.g. `Vercel vs Cloudflare`, `Supabase vs Firebase`, `AWS`).
+
+* **Example Arguments**:
+  ```json
+  {
+    "vendor_a": "vercel",
+    "vendor_b": "cloudflare",
+    "team_size": 5,
+    "traffic_tier": "growth"
+  }
+  ```
+* **Output**:
+  * Head-to-head monthly cost projection
+  * Egress tax warnings & seat cliff triggers
+  * Tailored 1-page executive Decision Brief link
 
 ---
 
