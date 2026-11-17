@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unbiased-radar-mcp"
+version = "1.0.0"
+description = "Unfiltered developer sentiment, pricing cliffs & gripes from Reddit and Hacker News for Claude, Cursor, and Windsurf"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "StackVerdict Team", email = "support@pingguye.cn"}
+]
+keywords = ["mcp", "model-context-protocol", "claude", "cursor", "sentiment-analysis", "stackverdict"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://pingguye.cn/stackverdict/"
+Repository = "https://github.com/yepinggu66/unbiased-radar-mcp"

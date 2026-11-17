@@ -1,0 +1,11 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      licenseKey:
+        type: string
+        description: "Optional StackVerdict Pro License Key for unlimited high-frequency sentiment tracking"
+  commandFunction:
+    - python
+    - server.py
